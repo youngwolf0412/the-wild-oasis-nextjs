@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export", // <-- Move this to the root level
   images: {
     remotePatterns: [
       {
@@ -8,7 +9,6 @@ const nextConfig = {
         pathname: "/storage/v1/object/public/cabin-images/*",
       },
     ],
-    output: "export",
   },
 };
 
